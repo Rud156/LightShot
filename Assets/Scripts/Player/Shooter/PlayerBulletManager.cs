@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerShoot : MonoBehaviour
+[RequireComponent(typeof(PlayerDamageSetter))]
+public class PlayerBulletManager : MonoBehaviour
 {
     [Header("Shoot Points")]
     public Transform leftShootPoint;
@@ -13,12 +14,17 @@ public class PlayerShoot : MonoBehaviour
     public float bulletLaunchVelocity;
 
     private SpriteRenderer playerRenderer;
+    private PlayerDamageSetter playerDamageSetter;
 
     /// <summary>
     /// Start is called on the frame when a script is enabled just before
     /// any of the Update methods is called the first time.
     /// </summary>
-    void Start() => playerRenderer = GetComponent<SpriteRenderer>();
+    void Start()
+    {
+        playerRenderer = GetComponent<SpriteRenderer>();
+        playerDamageSetter = GetComponent<PlayerDamageSetter>();
+    }
 
     /// <summary>
     /// Update is called every frame, if the MonoBehaviour is enabled.

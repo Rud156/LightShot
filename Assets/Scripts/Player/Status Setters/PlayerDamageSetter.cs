@@ -82,4 +82,14 @@ public class PlayerDamageSetter : MonoBehaviour
         if (currentHealth <= 0)
             Destroy(gameObject);
     }
+
+    public void AddHealth(float healthAmount)
+    {
+        if (currentHealth + healthAmount > maxPlayerHealth)
+            currentHealth = maxPlayerHealth;
+        else
+            currentHealth += healthAmount;
+    }
+
+    public void ReduceHealth(float healthAmount) => currentHealth -= healthAmount;
 }
