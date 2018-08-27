@@ -54,6 +54,12 @@ public class JumpAndMoveEnemy : MonoBehaviour
             other.gameObject.CompareTag(TagManager.MetalGround) ||
             other.gameObject.CompareTag(TagManager.Player))
             enemyGrounded = true;
+
+        if (other.gameObject.CompareTag(TagManager.Enemy))
+        {
+            moveLeft = !moveLeft;
+            enemyRB.velocity = Vector2.zero;
+        }
     }
 
     private void HorizontalMovement()
