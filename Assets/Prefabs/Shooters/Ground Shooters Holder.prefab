@@ -53,6 +53,7 @@ GameObject:
   - component: {fileID: 60430665697198164}
   - component: {fileID: 95533928440913590}
   - component: {fileID: 114616771868918810}
+  - component: {fileID: 114189452883309390}
   m_Layer: 0
   m_Name: Ground Shooters
   m_TagString: Untagged
@@ -150,6 +151,21 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &114189452883309390
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1837028513807576}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df10c0c589ab38741ba782f8e6d5c619, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxEnemyHealth: 50
+  enemyDestroyEffect: {fileID: 1023937842508206, guid: fb0442e313fec5847be6991eefc7483d,
+    type: 2}
+  enemyDamageAmount: 0
 --- !u!114 &114616771868918810
 MonoBehaviour:
   m_ObjectHideFlags: 1

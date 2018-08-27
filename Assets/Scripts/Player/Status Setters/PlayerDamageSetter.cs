@@ -80,9 +80,6 @@ public class PlayerDamageSetter : MonoBehaviour
     private void CheckHealthZero()
     {
         if (currentHealth <= 0)
-        {
-            Instantiate(playerDeathEffect, transform.position, Quaternion.identity);
             Destroy(gameObject);
-        }
     }
 }

@@ -92,7 +92,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxEnemyHealth: 50
-  enemyDestroyEffect: {fileID: 0}
+  enemyDestroyEffect: {fileID: 1023937842508206, guid: fb0442e313fec5847be6991eefc7483d,
+    type: 2}
   enemyDamageAmount: 20
 --- !u!114 &114400670919853886
 MonoBehaviour:
