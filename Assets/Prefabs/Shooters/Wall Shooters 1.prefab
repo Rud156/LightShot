@@ -114,7 +114,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerTransform: {fileID: 0}
-  maxDistanceToTarget: 100
+  maxDistanceToTarget: 80
   projectile: {fileID: 1557980014097704, guid: 078f2d8627173de419cbf9dc0eb40d34, type: 2}
   launchPoint: {fileID: 4265666227538594}
   projectileLaunchSpeed: 2
