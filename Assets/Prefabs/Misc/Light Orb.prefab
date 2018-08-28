@@ -99,7 +99,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a78866ad1aa1424cb35bdad876dd5d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healthAmount: 7
+  healthAmount: 14
 --- !u!198 &198279149082523330
 ParticleSystem:
   m_ObjectHideFlags: 1

@@ -6,7 +6,7 @@ using UnityEngine;
 public class RollEnemy : MonoBehaviour
 {
     public float maxMoveDistance;
-    public float movementSpeed;
+    public float movementSpeed = 1000;
 
     private Rigidbody2D enemyRB;
 

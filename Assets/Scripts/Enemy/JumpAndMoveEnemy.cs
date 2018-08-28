@@ -6,8 +6,8 @@ using UnityEngine;
 public class JumpAndMoveEnemy : MonoBehaviour
 {
     public float maxMoveDistance;
-    public float jumpVelocity;
-    public float movementSpeed;
+    public float jumpVelocity = 1000;
+    public float movementSpeed = 1000;
 
     private Rigidbody2D enemyRB;
 

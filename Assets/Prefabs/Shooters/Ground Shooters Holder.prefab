@@ -166,6 +166,10 @@ MonoBehaviour:
   enemyDestroyEffect: {fileID: 1023937842508206, guid: fb0442e313fec5847be6991eefc7483d,
     type: 2}
   enemyDamageAmount: 0
+  lightOrbs: {fileID: 1473085685321584, guid: 67b7b2a4707f1854e95c604101e7dca2, type: 2}
+  minLightOrbs: 1
+  maxLightOrbs: 7
+  orbCircleRadius: 5
 --- !u!114 &114616771868918810
 MonoBehaviour:
   m_ObjectHideFlags: 1

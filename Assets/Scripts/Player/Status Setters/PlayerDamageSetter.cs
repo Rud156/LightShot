@@ -58,10 +58,13 @@ public class PlayerDamageSetter : MonoBehaviour
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag(TagManager.WallShooter))
-            ReduceHealth(other.GetComponent<DestroyProjectileOnContact>().GetDamageAmount());
+            ReduceHealth(other.GetComponent<DestroyProjectileOnContactPlayer>().GetDamageAmount());
 
         if (other.CompareTag(TagManager.LightOrb))
+        {
             AddHealth(other.GetComponent<LightOrbDataManager>().healthAmount);
+            Destroy(other.gameObject);
+        }
     }
 
     /// <summary>
@@ -100,7 +103,10 @@ public class PlayerDamageSetter : MonoBehaviour
     private void CheckHealthZero()
     {
         if (currentHealth <= 0)
+        {
+            Instantiate(playerDeathEffect, transform.position, Quaternion.identity);
             Destroy(gameObject);
+        }
     }
 
     public void AddHealth(float healthAmount)

@@ -39,6 +39,7 @@ GameObject:
   - component: {fileID: 212405878085892284}
   - component: {fileID: 50612489359137618}
   - component: {fileID: 58515473634139968}
+  - component: {fileID: 114175627724681938}
   m_Layer: 0
   m_Name: Wall Shooter Bullet
   m_TagString: WallShooter
@@ -108,6 +109,19 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 2.3
+--- !u!114 &114175627724681938
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1557980014097704}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b2b7791d70309744bc3fdd6f9be48b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minDamageAmount: 20
+  maxDamageAmount: 30
 --- !u!198 &198358880664551796
 ParticleSystem:
   m_ObjectHideFlags: 1

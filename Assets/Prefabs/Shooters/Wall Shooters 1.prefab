@@ -114,10 +114,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerTransform: {fileID: 0}
-  maxDistanceToTarget: 50
+  maxDistanceToTarget: 100
   projectile: {fileID: 1557980014097704, guid: 078f2d8627173de419cbf9dc0eb40d34, type: 2}
   launchPoint: {fileID: 4265666227538594}
-  projectileLaunchSpeed: 2
+  projectileLaunchSpeed: 5
   waitBetweenShots: 3
 --- !u!212 &212204106982732840
 SpriteRenderer:
