@@ -38,6 +38,7 @@ GameObject:
   - component: {fileID: 4663241192741056}
   - component: {fileID: 212442022639768556}
   - component: {fileID: 58463916211033484}
+  - component: {fileID: 114847803115396212}
   m_Layer: 0
   m_Name: Light Orb
   m_TagString: LightOrb
@@ -87,6 +88,18 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 2.2999997
+--- !u!114 &114847803115396212
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1473085685321584}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a78866ad1aa1424cb35bdad876dd5d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthAmount: 7
 --- !u!198 &198279149082523330
 ParticleSystem:
   m_ObjectHideFlags: 1

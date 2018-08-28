@@ -36,6 +36,7 @@ public class PlayerDamageSetter : MonoBehaviour
     {
         UpdateGameLight();
         UpdateHealthToUI();
+
         CheckHealthZero();
     }
 
@@ -46,7 +47,7 @@ public class PlayerDamageSetter : MonoBehaviour
     void OnParticleCollision(GameObject other)
     {
         if (other.CompareTag(TagManager.GroundShooter))
-            currentHealth -= DamageData.GetGroundShooterDamage();
+            ReduceHealth(DamageData.GetGroundShooterDamage());
     }
 
     /// <summary>
@@ -57,12 +58,10 @@ public class PlayerDamageSetter : MonoBehaviour
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag(TagManager.WallShooter))
-            currentHealth -= other.GetComponent<DestroyProjectileOnContact>().GetDamageAmount();
+            ReduceHealth(other.GetComponent<DestroyProjectileOnContact>().GetDamageAmount());
 
         if (other.CompareTag(TagManager.LightOrb))
-        {
-            // Collect Light Orb and Add to Health
-        }
+            AddHealth(other.GetComponent<LightOrbDataManager>().healthAmount);
     }
 
     /// <summary>
@@ -73,7 +72,7 @@ public class PlayerDamageSetter : MonoBehaviour
     void OnCollisionEnter2D(Collision2D other)
     {
         if (other.gameObject.CompareTag(TagManager.Enemy))
-            currentHealth -= other.gameObject.GetComponent<EnemyDamageSetter>().enemyDamageAmount;
+            ReduceHealth(other.gameObject.GetComponent<EnemyDamageSetter>().enemyDamageAmount);
     }
 
     private void UpdateGameLight()
