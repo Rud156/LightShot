@@ -13,6 +13,7 @@ public class PlayerBulletManager : MonoBehaviour
     [Header("Bullet")]
     public GameObject bullet;
     public float bulletLaunchVelocity;
+    public float bulletLifetime = 3f;
 
     private SpriteRenderer playerRenderer;
     private PlayerDamageSetter playerDamageSetter;
@@ -55,5 +56,10 @@ public class PlayerBulletManager : MonoBehaviour
 
         Rigidbody2D bulletRigidbody = bulletInstance.GetComponent<Rigidbody2D>();
         bulletRigidbody.velocity = bulletLaunchVelocity * direction * Vector2.right;
+
+        DestroyBullet destroyBullet = bulletInstance.GetComponent<DestroyBullet>();
+        destroyBullet.SetBulletLifetime(bulletLifetime);
+
+        playerDamageSetter.ReduceHealth(bulletLifetime);
     }
 }

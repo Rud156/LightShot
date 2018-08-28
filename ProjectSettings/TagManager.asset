@@ -12,6 +12,7 @@ TagManager:
   - WallShooter
   - GroundShooter
   - Bullet
+  - LightOrb
   layers:
   - Default
   - TransparentFX

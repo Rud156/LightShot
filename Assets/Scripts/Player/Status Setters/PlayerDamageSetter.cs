@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.PostProcessing.Utilities;
 
 public class PlayerDamageSetter : MonoBehaviour
 {
@@ -17,8 +18,8 @@ public class PlayerDamageSetter : MonoBehaviour
 
 
     [Header("UI Affectors")]
-    public RawImage lightImage;
-    public RawImage gameSun;
+    public PostProcessingController cameraEffectController;
+    public RawImage sunSprite;
 
     private float currentHealth;
 
@@ -77,8 +78,11 @@ public class PlayerDamageSetter : MonoBehaviour
 
     private void UpdateGameLight()
     {
-        float healthRatio = currentHealth / maxPlayerHealth;
+        float healthRatio = (currentHealth / maxPlayerHealth);
+        float mappedRatio = 1 - healthRatio;
 
+        cameraEffectController.vignette.intensity = mappedRatio;
+        sunSprite.color = Color.Lerp(Color.white, Color.black, mappedRatio);
     }
 
     private void UpdateHealthToUI()

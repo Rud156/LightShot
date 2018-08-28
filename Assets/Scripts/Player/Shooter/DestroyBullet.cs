@@ -41,5 +41,5 @@ public class DestroyBullet : MonoBehaviour
         Destroy(gameObject);
     }
 
-    private void SetBulletLifetime(float lifeTime) => bulletLifetime = lifeTime;
+    public void SetBulletLifetime(float lifeTime) => bulletLifetime = lifeTime;
 }
