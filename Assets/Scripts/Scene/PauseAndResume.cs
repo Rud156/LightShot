@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class PauseAndResume : MonoBehaviour
 {
     public GameObject pauseMenu;
+    public Animator sceneTextAnimator;
 
     /// <summary>
     /// Start is called on the frame when a script is enabled just before
@@ -16,6 +17,8 @@ public class PauseAndResume : MonoBehaviour
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
         pauseMenu.SetActive(false);
+
+        sceneTextAnimator.SetTrigger(AnimatorVariables.DisplayText);
     }
 
     /// <summary>

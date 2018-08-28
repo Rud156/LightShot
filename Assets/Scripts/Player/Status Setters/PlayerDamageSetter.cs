@@ -121,4 +121,6 @@ public class PlayerDamageSetter : MonoBehaviour
     }
 
     public void ReduceHealth(float healthAmount) => currentHealth -= healthAmount;
+
+    public float GetCurrentHealth() => currentHealth;
 }
