@@ -70,7 +70,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1784985582354026}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3, y: -0.9, z: 0}
+  m_LocalPosition: {x: 3.5, y: -0.9, z: 0}
   m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_Children: []
   m_Father: {fileID: 4300500564146756}
@@ -98,7 +98,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1942328590787350}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3, y: -0.9, z: 0}
+  m_LocalPosition: {x: -3.5, y: -0.9, z: 0}
   m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_Children: []
   m_Father: {fileID: 4300500564146756}
@@ -172,6 +172,8 @@ MonoBehaviour:
   maxHealthColor: {r: 0, g: 1, b: 0, a: 1}
   healthSlider: {fileID: 0}
   healthFiller: {fileID: 0}
+  cameraEffectController: {fileID: 0}
+  sunSprite: {fileID: 0}
 --- !u!114 &114153109167548932
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -213,6 +215,7 @@ MonoBehaviour:
   rightShootPoint: {fileID: 4192163252355858}
   bullet: {fileID: 1430546100951110, guid: 2c5e5219a0e6d0647bdfd21d4cb62577, type: 2}
   bulletLaunchVelocity: 75
+  bulletLifetime: 3
 --- !u!212 &212141645445094642
 SpriteRenderer:
   m_ObjectHideFlags: 1
