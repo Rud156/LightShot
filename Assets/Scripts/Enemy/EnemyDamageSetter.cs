@@ -4,9 +4,16 @@ using UnityEngine;
 
 public class EnemyDamageSetter : MonoBehaviour
 {
-    public float maxEnemyHealth;
+    [Header("Enemy Stats")]
+    public float maxEnemyHealth = 50;
     public GameObject enemyDestroyEffect;
-    public float enemyDamageAmount;
+    public float enemyDamageAmount = 10;
+
+    [Header("Light Stats")]
+    public GameObject lightOrbs;
+    public int minLightOrbs = 1;
+    public int maxLightOrbs = 7;
+    public float orbCircleRadius = 5;
 
     private float currentEnemyHealth;
 
@@ -24,6 +31,17 @@ public class EnemyDamageSetter : MonoBehaviour
         if (currentEnemyHealth <= 0)
         {
             Instantiate(enemyDestroyEffect, transform.position, Quaternion.identity);
+
+            int randomLightOrbs = Random.Range(minLightOrbs, maxLightOrbs);
+            for (int i = 0; i < randomLightOrbs; i++)
+            {
+                Vector3 randomPointInsideCircle = Random.insideUnitCircle * orbCircleRadius;
+
+                Instantiate(lightOrbs,
+                   randomPointInsideCircle + transform.position,
+                   Quaternion.identity);
+            }
+
             Destroy(gameObject);
         }
     }

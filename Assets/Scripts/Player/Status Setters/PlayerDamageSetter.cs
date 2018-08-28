@@ -15,6 +15,11 @@ public class PlayerDamageSetter : MonoBehaviour
     public Slider healthSlider;
     public Image healthFiller;
 
+
+    [Header("UI Affectors")]
+    public RawImage lightImage;
+    public RawImage gameSun;
+
     private float currentHealth;
 
     /// <summary>
@@ -28,6 +33,7 @@ public class PlayerDamageSetter : MonoBehaviour
     /// </summary>
     void Update()
     {
+        UpdateGameLight();
         UpdateHealthToUI();
         CheckHealthZero();
     }
@@ -51,6 +57,11 @@ public class PlayerDamageSetter : MonoBehaviour
     {
         if (other.CompareTag(TagManager.WallShooter))
             currentHealth -= other.GetComponent<DestroyProjectileOnContact>().GetDamageAmount();
+
+        if (other.CompareTag(TagManager.LightOrb))
+        {
+            // Collect Light Orb and Add to Health
+        }
     }
 
     /// <summary>
@@ -62,6 +73,12 @@ public class PlayerDamageSetter : MonoBehaviour
     {
         if (other.gameObject.CompareTag(TagManager.Enemy))
             currentHealth -= other.gameObject.GetComponent<EnemyDamageSetter>().enemyDamageAmount;
+    }
+
+    private void UpdateGameLight()
+    {
+        float healthRatio = currentHealth / maxPlayerHealth;
+
     }
 
     private void UpdateHealthToUI()
