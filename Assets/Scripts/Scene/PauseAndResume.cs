@@ -53,11 +53,6 @@ public class PauseAndResume : MonoBehaviour
         Time.timeScale = 1;
     }
 
-    public void GoToMainMenu()
-    {
-        NextSceneData.nextSceneIndex = 0;
-        Time.timeScale = 1;
-
-        SceneManager.LoadScene(2);
-    }
+    public void GoToMainMenu() =>
+        SceneManager.LoadScene(1);
 }
