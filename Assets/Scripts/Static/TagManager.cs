@@ -18,4 +18,6 @@ public class TagManager
     public const string Bullet = "Bullet";
 
     public const string LightOrb = "LightOrb";
+
+    public const string GameBoundary = "GameBoundary";
 }

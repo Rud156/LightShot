@@ -65,6 +65,9 @@ public class PlayerDamageSetter : MonoBehaviour
             AddHealth(other.GetComponent<LightOrbDataManager>().healthAmount);
             Destroy(other.gameObject);
         }
+
+        if (other.CompareTag(TagManager.GameBoundary))
+            ReduceHealth(Mathf.Infinity);
     }
 
     /// <summary>
