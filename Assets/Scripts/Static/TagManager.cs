@@ -20,4 +20,6 @@ public class TagManager
     public const string LightOrb = "LightOrb";
 
     public const string GameBoundary = "GameBoundary";
+
+    public const string GravityChanger = "GravityChanger";
 }
