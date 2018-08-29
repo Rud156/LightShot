@@ -7,7 +7,6 @@ using UnityEngine.SceneManagement;
 public class ChangeSceneOnStart : MonoBehaviour
 {
     public Slider loadingSlider;
-    public float bufferTime = 2f;
 
     /// <summary>
     /// Start is called on the frame when a script is enabled just before
@@ -17,9 +16,6 @@ public class ChangeSceneOnStart : MonoBehaviour
 
     IEnumerator LoadNextSceneAsync()
     {
-        loadingSlider.value = 0;
-        yield return new WaitForSeconds(bufferTime);
-
         int sceneIndex = NextSceneData.nextSceneIndex;
         AsyncOperation operation = SceneManager.LoadSceneAsync(sceneIndex);
 

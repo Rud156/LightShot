@@ -1,12 +1,15 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 [RequireComponent(typeof(Rigidbody2D))]
 public class PlayerChangeGravity : MonoBehaviour
 {
     [Range(3, 7)]
     public int reducedGravity = 5;
+    public Text displayText;
+    public Animator displayTextAnimator;
 
     private Rigidbody2D playerRB;
     private bool gravitySwitchCollected;
@@ -40,8 +43,14 @@ public class PlayerChangeGravity : MonoBehaviour
     /// <param name="other">The other Collider2D involved in this collision.</param>
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag(TagManager.GravityChanger))
+        if (other.CompareTag(TagManager.GravityChanger) && !gravitySwitchCollected)
+        {
             gravitySwitchCollected = true;
+
+            displayText.text = "Collected Gravity Switch";
+            displayText.color = Color.yellow;
+            displayTextAnimator.SetTrigger(AnimatorVariables.DisplayText);
+        }
     }
 
     private void ToggleGravity()
