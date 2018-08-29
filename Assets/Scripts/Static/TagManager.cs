@@ -6,6 +6,7 @@ public class TagManager
 {
     public const string Player = "Player";
     public const string Enemy = "Enemy";
+    public const string MainCamera = "MainCamera";
 
     public const string GrassGround = "GrassGround";
     public const string LavaGround = "LavaGround";

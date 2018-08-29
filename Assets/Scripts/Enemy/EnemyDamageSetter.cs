@@ -15,13 +15,20 @@ public class EnemyDamageSetter : MonoBehaviour
     public int maxLightOrbs = 7;
     public float orbCircleRadius = 5;
 
+    private Animator mainCameraAnimator;
     private float currentEnemyHealth;
 
     /// <summary>
     /// Start is called on the frame when a script is enabled just before
     /// any of the Update methods is called the first time.
     /// </summary>
-    void Start() => currentEnemyHealth = maxEnemyHealth;
+    void Start()
+    {
+        mainCameraAnimator = GameObject.FindGameObjectWithTag(TagManager.MainCamera)
+            .GetComponent<Animator>();
+
+        currentEnemyHealth = maxEnemyHealth;
+    }
 
     /// <summary>
     /// Update is called every frame, if the MonoBehaviour is enabled.
@@ -57,6 +64,8 @@ public class EnemyDamageSetter : MonoBehaviour
         {
             float damageAmount = other.GetComponent<DestroyBullet>().bulletDamage;
             currentEnemyHealth -= damageAmount;
+
+            mainCameraAnimator.SetTrigger(AnimatorVariables.ShakeCamera);
         }
     }
 }

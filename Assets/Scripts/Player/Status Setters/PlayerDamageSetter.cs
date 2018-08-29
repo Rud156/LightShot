@@ -21,13 +21,20 @@ public class PlayerDamageSetter : MonoBehaviour
     public PostProcessingController cameraEffectController;
     public RawImage sunSprite;
 
+    private Animator mainCameraAnimator;
     private float currentHealth;
 
     /// <summary>
     /// Start is called on the frame when a script is enabled just before
     /// any of the Update methods is called the first time.
     /// </summary>
-    void Start() => currentHealth = maxPlayerHealth;
+    void Start()
+    {
+        mainCameraAnimator = GameObject.FindGameObjectWithTag(TagManager.MainCamera)
+            .GetComponent<Animator>();
+
+        currentHealth = maxPlayerHealth;
+    }
 
     /// <summary>
     /// Update is called every frame, if the MonoBehaviour is enabled.
@@ -47,7 +54,10 @@ public class PlayerDamageSetter : MonoBehaviour
     void OnParticleCollision(GameObject other)
     {
         if (other.CompareTag(TagManager.GroundShooter))
+        {
+            mainCameraAnimator.SetTrigger(AnimatorVariables.ShakeCamera);
             ReduceHealth(DamageData.GetGroundShooterDamage());
+        }
     }
 
     /// <summary>
@@ -58,7 +68,10 @@ public class PlayerDamageSetter : MonoBehaviour
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag(TagManager.WallShooter))
+        {
+            mainCameraAnimator.SetTrigger(AnimatorVariables.ShakeCamera);
             ReduceHealth(other.GetComponent<DestroyProjectileOnContactPlayer>().GetDamageAmount());
+        }
 
         if (other.CompareTag(TagManager.LightOrb))
         {
@@ -108,6 +121,7 @@ public class PlayerDamageSetter : MonoBehaviour
         if (currentHealth <= 0)
         {
             Instantiate(playerDeathEffect, transform.position, Quaternion.identity);
+            mainCameraAnimator.SetTrigger(AnimatorVariables.ShakeCamera);
             Destroy(gameObject);
         }
     }
