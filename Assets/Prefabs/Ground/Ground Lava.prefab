@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 61353384772640144}
   m_Layer: 0
   m_Name: Ground Lava
-  m_TagString: Untagged
+  m_TagString: LavaGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

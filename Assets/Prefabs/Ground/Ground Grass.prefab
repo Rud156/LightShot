@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 61459783130713992}
   m_Layer: 0
   m_Name: Ground Grass
-  m_TagString: Untagged
+  m_TagString: GrassGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
