@@ -59,9 +59,23 @@ public class PlayerChangeGravity : MonoBehaviour
             return;
 
         float currentGravity = playerRB.gravityScale;
+
         if (currentGravity == initialGravity)
+        {
             playerRB.gravityScale = reducedGravity;
+            DisplayGravityChangedText("Gravity Decreased");
+        }
         else
+        {
             playerRB.gravityScale = initialGravity;
+            DisplayGravityChangedText("Gravity Increased");
+        }
+    }
+
+    private void DisplayGravityChangedText(string text)
+    {
+        displayText.text = text;
+        displayText.color = Color.yellow;
+        displayTextAnimator.SetTrigger(AnimatorVariables.DisplayText);
     }
 }

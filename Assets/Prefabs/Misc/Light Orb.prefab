@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 4062686754274794}
   - component: {fileID: 198279149082523330}
   - component: {fileID: 199827468233497048}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Light Trail
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39,7 +39,7 @@ GameObject:
   - component: {fileID: 212442022639768556}
   - component: {fileID: 58463916211033484}
   - component: {fileID: 114847803115396212}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Light Orb
   m_TagString: LightOrb
   m_Icon: {fileID: 0}
