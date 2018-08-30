@@ -3798,11 +3798,11 @@ Transform:
   - {fileID: 853162143}
   - {fileID: 1042559795}
   - {fileID: 687499876}
+  - {fileID: 959004959}
   - {fileID: 536348108}
   - {fileID: 436391447}
   - {fileID: 1693336795}
   - {fileID: 2121873823}
-  - {fileID: 959004959}
   - {fileID: 1396120170}
   - {fileID: 1377697}
   - {fileID: 1679624331}
@@ -6243,7 +6243,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4377053397113628, guid: 06c70cf755cac3c42aa82747e3994c3d, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 409
+      value: 406
       objectReference: {fileID: 0}
     - target: {fileID: 4377053397113628, guid: 06c70cf755cac3c42aa82747e3994c3d, type: 2}
       propertyPath: m_LocalPosition.z
