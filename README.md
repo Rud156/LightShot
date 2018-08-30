@@ -1,11 +1,11 @@
 # LightShot
-A game made for the Brackeys Game Jam inspired by Mario with a small twist added for the theme **Light**.
+A game made for the [Brackeys Game Jam](https://itch.io/jam/brackeys) inspired by Mario with a small but punishing twist added for the theme **Light**.
 
 ## Objective:
 > Reach the door at the end of the level avoiding all enemies and weapons
 
 ## Controls:
-- AD or Arrow Keys to move
+- A/D or Left/Right Arrow Keys to move
 - SPACE to Jump
 - Q to Shoot
 - E to Change Gravity
