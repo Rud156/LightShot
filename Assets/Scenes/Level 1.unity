@@ -1184,6 +1184,16 @@ Prefab:
       propertyPath: sunSprite
       value: 
       objectReference: {fileID: 125879406}
+    - target: {fileID: 114925032642022780, guid: 1191ad7ae1ab9da488131bfd19f92e6a,
+        type: 2}
+      propertyPath: displayTextAnimator
+      value: 
+      objectReference: {fileID: 320970729}
+    - target: {fileID: 114925032642022780, guid: 1191ad7ae1ab9da488131bfd19f92e6a,
+        type: 2}
+      propertyPath: displayText
+      value: 
+      objectReference: {fileID: 320970730}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1191ad7ae1ab9da488131bfd19f92e6a, type: 2}
   m_IsPrefabAsset: 0
