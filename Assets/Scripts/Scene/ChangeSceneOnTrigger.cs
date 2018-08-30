@@ -21,6 +21,7 @@ public class ChangeSceneOnTrigger : MonoBehaviour
     void Start()
     {
         portalAudio = GetComponent<AudioSource>();
+
         playerTriggered = false;
     }
 
@@ -32,7 +33,10 @@ public class ChangeSceneOnTrigger : MonoBehaviour
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag(TagManager.Player) && !playerTriggered)
+        {
             StartCoroutine(ChangeSceneOnPortal());
+            playerTriggered = true;
+        }
     }
 
     private IEnumerator ChangeSceneOnPortal()
