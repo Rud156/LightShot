@@ -1027,6 +1027,11 @@ Prefab:
       propertyPath: m_LocalScale.y
       value: 0.10000003
       objectReference: {fileID: 0}
+    - target: {fileID: 114416960291144360, guid: 43937992e50423d45b80898ea695d035,
+        type: 2}
+      propertyPath: sceneScoreManager
+      value: 
+      objectReference: {fileID: 1039302015}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 43937992e50423d45b80898ea695d035, type: 2}
   m_IsPrefabAsset: 0
@@ -1321,6 +1326,11 @@ Prefab:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
       objectReference: {fileID: 0}
+    - target: {fileID: 114416960291144360, guid: 43937992e50423d45b80898ea695d035,
+        type: 2}
+      propertyPath: sceneScoreManager
+      value: 
+      objectReference: {fileID: 1039302015}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 43937992e50423d45b80898ea695d035, type: 2}
   m_IsPrefabAsset: 0
@@ -1979,6 +1989,11 @@ Prefab:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
       objectReference: {fileID: 0}
+    - target: {fileID: 114416960291144360, guid: 43937992e50423d45b80898ea695d035,
+        type: 2}
+      propertyPath: sceneScoreManager
+      value: 
+      objectReference: {fileID: 1039302015}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 43937992e50423d45b80898ea695d035, type: 2}
   m_IsPrefabAsset: 0
@@ -4779,6 +4794,11 @@ Prefab:
       propertyPath: m_LocalScale.y
       value: 0.10000003
       objectReference: {fileID: 0}
+    - target: {fileID: 114416960291144360, guid: 43937992e50423d45b80898ea695d035,
+        type: 2}
+      propertyPath: sceneScoreManager
+      value: 
+      objectReference: {fileID: 1039302015}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 43937992e50423d45b80898ea695d035, type: 2}
   m_IsPrefabAsset: 0
@@ -5804,6 +5824,11 @@ Prefab:
       propertyPath: maxDistanceToTarget
       value: 80
       objectReference: {fileID: 0}
+    - target: {fileID: 114416960291144360, guid: 43937992e50423d45b80898ea695d035,
+        type: 2}
+      propertyPath: sceneScoreManager
+      value: 
+      objectReference: {fileID: 1039302015}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 43937992e50423d45b80898ea695d035, type: 2}
   m_IsPrefabAsset: 0
