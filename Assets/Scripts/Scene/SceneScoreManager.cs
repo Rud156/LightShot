@@ -42,6 +42,8 @@ public class SceneScoreManager : MonoBehaviour
 
         if (currentScore > savedScore)
         {
+            print("Inside If");
+
             PlayerPrefs
                 .SetInt($"{ExtensionFunctions.GetPlayerPrefBaseString()}_{currentSceneIndex - 2}_Score",
                     currentScore);

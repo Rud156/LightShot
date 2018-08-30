@@ -4,9 +4,16 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class SceneSelector : MonoBehaviour
+public class SceneSelectorManager : MonoBehaviour
 {
-    public List<RawImage> levelImages;
+    [System.Serializable]
+    public struct SceneSelector
+    {
+        public RawImage levelImage;
+        public Text scoreText;
+    };
+
+    public List<SceneSelector> sceneSelectors;
 
     /// <summary>
     /// Start is called on the frame when a script is enabled just before
@@ -14,10 +21,20 @@ public class SceneSelector : MonoBehaviour
     /// </summary>
     void Start()
     {
-        for (int i = 0; i < levelImages.Count; i++)
+        for (int i = 0; i < sceneSelectors.Count; i++)
         {
-            if (PlayerPrefs.HasKey($"{ExtensionFunctions.GetPlayerPrefBaseString()}_${i + 1}"))
-                levelImages[i].color = Color.green;
+            if (PlayerPrefs.HasKey($"{ExtensionFunctions.GetPlayerPrefBaseString()}_{i + 1}"))
+                sceneSelectors[i].levelImage.color = Color.green;
+
+            if (PlayerPrefs.HasKey($"{ExtensionFunctions.GetPlayerPrefBaseString()}_{i + 1}_Score"))
+            {
+                int savedScore = PlayerPrefs
+                    .GetInt($"{ExtensionFunctions.GetPlayerPrefBaseString()}_{i + 1}_Score");
+
+                sceneSelectors[i].scoreText.text = $"Score - {savedScore}";
+            }
+            else
+                sceneSelectors[i].scoreText.text = "Score - 0";
         }
     }
 

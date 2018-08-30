@@ -21,5 +21,5 @@ public class ExtensionFunctions
 
     public static string Format2DecimalPlace(float value) => value.ToString("0.##");
 
-    public static string GetPlayerPrefBaseString() => "Level_";
+    public static string GetPlayerPrefBaseString() => "Level";
 }

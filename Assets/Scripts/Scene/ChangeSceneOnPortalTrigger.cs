@@ -40,7 +40,7 @@ public class ChangeSceneOnPortalTrigger : MonoBehaviour
 
             int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
             PlayerPrefs
-                .SetInt($"{ExtensionFunctions.GetPlayerPrefBaseString()}_${currentSceneIndex - 2}", 1);
+                .SetInt($"{ExtensionFunctions.GetPlayerPrefBaseString()}_{currentSceneIndex - 2}", 1);
 
             sceneScoreManager.SaveScore();
         }

@@ -229,6 +229,12 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 18386163}
   m_Script: {fileID: -98529514, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+--- !u!114 &18386165 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114286525933817604, guid: 9900c21b6984a3e42971b8dbc406814a,
+    type: 2}
+  m_PrefabInternal: {fileID: 18386163}
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
 --- !u!1 &79919011
 GameObject:
   m_ObjectHideFlags: 0
@@ -581,6 +587,11 @@ Prefab:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 114110770573729342, guid: 9900c21b6984a3e42971b8dbc406814a,
+        type: 2}
+      propertyPath: m_Text
+      value: Level 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9900c21b6984a3e42971b8dbc406814a, type: 2}
   m_IsPrefabAsset: 0
@@ -590,6 +601,12 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 111941092}
   m_Script: {fileID: -98529514, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+--- !u!114 &111941094 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114286525933817604, guid: 9900c21b6984a3e42971b8dbc406814a,
+    type: 2}
+  m_PrefabInternal: {fileID: 111941092}
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
 --- !u!224 &114226454 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 224146760364813252, guid: 9900c21b6984a3e42971b8dbc406814a,
@@ -751,6 +768,11 @@ Prefab:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 114110770573729342, guid: 9900c21b6984a3e42971b8dbc406814a,
+        type: 2}
+      propertyPath: m_Text
+      value: Level 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9900c21b6984a3e42971b8dbc406814a, type: 2}
   m_IsPrefabAsset: 0
@@ -760,6 +782,12 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 361538197}
   m_Script: {fileID: -98529514, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+--- !u!114 &361538199 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114286525933817604, guid: 9900c21b6984a3e42971b8dbc406814a,
+    type: 2}
+  m_PrefabInternal: {fileID: 361538197}
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
 --- !u!1001 &514168168
 Prefab:
   m_ObjectHideFlags: 0
@@ -911,6 +939,11 @@ Prefab:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 114110770573729342, guid: 9900c21b6984a3e42971b8dbc406814a,
+        type: 2}
+      propertyPath: m_Text
+      value: Level 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9900c21b6984a3e42971b8dbc406814a, type: 2}
   m_IsPrefabAsset: 0
@@ -920,6 +953,12 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 514168168}
   m_Script: {fileID: -98529514, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+--- !u!114 &514168170 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114286525933817604, guid: 9900c21b6984a3e42971b8dbc406814a,
+    type: 2}
+  m_PrefabInternal: {fileID: 514168168}
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
 --- !u!1 &541230855
 GameObject:
   m_ObjectHideFlags: 0
@@ -1496,6 +1535,11 @@ Prefab:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 114110770573729342, guid: 9900c21b6984a3e42971b8dbc406814a,
+        type: 2}
+      propertyPath: m_Text
+      value: Level 4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9900c21b6984a3e42971b8dbc406814a, type: 2}
   m_IsPrefabAsset: 0
@@ -1505,6 +1549,12 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 1342460242}
   m_Script: {fileID: -98529514, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+--- !u!114 &1342460244 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114286525933817604, guid: 9900c21b6984a3e42971b8dbc406814a,
+    type: 2}
+  m_PrefabInternal: {fileID: 1342460242}
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
 --- !u!1001 &1361308043
 Prefab:
   m_ObjectHideFlags: 0
@@ -1656,6 +1706,11 @@ Prefab:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 114110770573729342, guid: 9900c21b6984a3e42971b8dbc406814a,
+        type: 2}
+      propertyPath: m_Text
+      value: Level 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9900c21b6984a3e42971b8dbc406814a, type: 2}
   m_IsPrefabAsset: 0
@@ -1665,6 +1720,12 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 1361308043}
   m_Script: {fileID: -98529514, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+--- !u!114 &1361308045 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114286525933817604, guid: 9900c21b6984a3e42971b8dbc406814a,
+    type: 2}
+  m_PrefabInternal: {fileID: 1361308043}
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
 --- !u!1 &1702424655
 GameObject:
   m_ObjectHideFlags: 0
@@ -1930,6 +1991,13 @@ Prefab:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 114110770573729342, guid: 9900c21b6984a3e42971b8dbc406814a,
+        type: 2}
+      propertyPath: m_Text
+      value: 'Level 2
+
+        <b>Tutorial</b>'
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9900c21b6984a3e42971b8dbc406814a, type: 2}
   m_IsPrefabAsset: 0
@@ -1939,6 +2007,12 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 1850541091}
   m_Script: {fileID: -98529514, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+--- !u!114 &1850541093 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114286525933817604, guid: 9900c21b6984a3e42971b8dbc406814a,
+    type: 2}
+  m_PrefabInternal: {fileID: 1850541091}
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
 --- !u!1 &1919271988
 GameObject:
   m_ObjectHideFlags: 0
@@ -1988,17 +2062,24 @@ MonoBehaviour:
   m_GameObject: {fileID: 1919271988}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c8cd5c8f2fa94ac41878f009d06a2b53, type: 3}
+  m_Script: {fileID: 11500000, guid: 5526a24c47a9c3345a15379649da0f2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelImages:
-  - {fileID: 18386164}
-  - {fileID: 1850541092}
-  - {fileID: 514168169}
-  - {fileID: 1342460243}
-  - {fileID: 111941093}
-  - {fileID: 361538198}
-  - {fileID: 1361308044}
+  sceneSelectors:
+  - levelImage: {fileID: 18386164}
+    scoreText: {fileID: 18386165}
+  - levelImage: {fileID: 1850541092}
+    scoreText: {fileID: 1850541093}
+  - levelImage: {fileID: 514168169}
+    scoreText: {fileID: 514168170}
+  - levelImage: {fileID: 1342460243}
+    scoreText: {fileID: 1342460244}
+  - levelImage: {fileID: 111941093}
+    scoreText: {fileID: 111941094}
+  - levelImage: {fileID: 361538198}
+    scoreText: {fileID: 361538199}
+  - levelImage: {fileID: 1361308044}
+    scoreText: {fileID: 1361308045}
 --- !u!1 &1980269863
 GameObject:
   m_ObjectHideFlags: 0
