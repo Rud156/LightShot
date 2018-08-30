@@ -160,6 +160,11 @@ Prefab:
       propertyPath: m_LocalScale.y
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114920527439910558, guid: 51085fc66d10ef545b607c25473e4fa0,
+        type: 2}
+      propertyPath: sceneScoreManager
+      value: 
+      objectReference: {fileID: 1039302015}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 51085fc66d10ef545b607c25473e4fa0, type: 2}
   m_IsPrefabAsset: 0
@@ -385,6 +390,11 @@ Prefab:
       propertyPath: maxPlayerDistance
       value: 80
       objectReference: {fileID: 0}
+    - target: {fileID: 114216333909082618, guid: 3f05f981823c04a42b0bf6cfa69043d5,
+        type: 2}
+      propertyPath: sceneScoreManager
+      value: 
+      objectReference: {fileID: 1039302015}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3f05f981823c04a42b0bf6cfa69043d5, type: 2}
   m_IsPrefabAsset: 0
@@ -393,74 +403,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4604854988291196, guid: 3f05f981823c04a42b0bf6cfa69043d5,
     type: 2}
   m_PrefabInternal: {fileID: 85405169}
---- !u!1 &125879404
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 125879405}
-  - component: {fileID: 125879407}
-  - component: {fileID: 125879406}
-  m_Layer: 5
-  m_Name: Sun Sprite
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &125879405
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 125879404}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1519907170}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 1, y: 1}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -35, y: -35}
-  m_SizeDelta: {x: 35, y: 35}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &125879406
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 125879404}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -98529514, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Texture: {fileID: 2800000, guid: 82608664a1be73a4387b2224c6881a47, type: 3}
-  m_UVRect:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 1
-    height: 1
---- !u!222 &125879407
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 125879404}
-  m_CullTransparentMesh: 0
 --- !u!1 &127190196
 GameObject:
   m_ObjectHideFlags: 0
@@ -629,6 +571,11 @@ Prefab:
       propertyPath: m_LocalScale.y
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114920527439910558, guid: 51085fc66d10ef545b607c25473e4fa0,
+        type: 2}
+      propertyPath: sceneScoreManager
+      value: 
+      objectReference: {fileID: 1039302015}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 51085fc66d10ef545b607c25473e4fa0, type: 2}
   m_IsPrefabAsset: 0
@@ -689,6 +636,11 @@ Prefab:
       propertyPath: maxMoveDistance
       value: 61
       objectReference: {fileID: 0}
+    - target: {fileID: 114128924143297228, guid: 8f6afff8f42396340b90b1532e7f3de5,
+        type: 2}
+      propertyPath: sceneScoreManager
+      value: 
+      objectReference: {fileID: 1039302015}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8f6afff8f42396340b90b1532e7f3de5, type: 2}
   m_IsPrefabAsset: 0
@@ -1254,6 +1206,74 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 320970727}
   m_CullTransparentMesh: 0
+--- !u!1 &329737837
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 329737838}
+  - component: {fileID: 329737840}
+  - component: {fileID: 329737839}
+  m_Layer: 5
+  m_Name: Sun Sprite
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &329737838
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 329737837}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 808165532}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 1, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -25, y: -25}
+  m_SizeDelta: {x: 50, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &329737839
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 329737837}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -98529514, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Texture: {fileID: 2800000, guid: 82608664a1be73a4387b2224c6881a47, type: 3}
+  m_UVRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+--- !u!222 &329737840
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 329737837}
+  m_CullTransparentMesh: 0
 --- !u!1 &334549276 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1003543257759738, guid: 6face22910c40804194b2c30e2502ec5,
@@ -1446,6 +1466,11 @@ Prefab:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114920527439910558, guid: 51085fc66d10ef545b607c25473e4fa0,
+        type: 2}
+      propertyPath: sceneScoreManager
+      value: 
+      objectReference: {fileID: 1039302015}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 51085fc66d10ef545b607c25473e4fa0, type: 2}
   m_IsPrefabAsset: 0
@@ -2383,6 +2408,11 @@ Prefab:
       propertyPath: maxMoveDistance
       value: 17
       objectReference: {fileID: 0}
+    - target: {fileID: 114216333909082618, guid: 3f05f981823c04a42b0bf6cfa69043d5,
+        type: 2}
+      propertyPath: sceneScoreManager
+      value: 
+      objectReference: {fileID: 1039302015}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3f05f981823c04a42b0bf6cfa69043d5, type: 2}
   m_IsPrefabAsset: 0
@@ -2861,6 +2891,11 @@ Prefab:
       propertyPath: m_LocalScale.x
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114216333909082618, guid: 3f05f981823c04a42b0bf6cfa69043d5,
+        type: 2}
+      propertyPath: sceneScoreManager
+      value: 
+      objectReference: {fileID: 1039302015}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3f05f981823c04a42b0bf6cfa69043d5, type: 2}
   m_IsPrefabAsset: 0
@@ -2927,7 +2962,7 @@ Prefab:
         type: 2}
       propertyPath: sunSprite
       value: 
-      objectReference: {fileID: 125879406}
+      objectReference: {fileID: 329737839}
     - target: {fileID: 114925032642022780, guid: 1191ad7ae1ab9da488131bfd19f92e6a,
         type: 2}
       propertyPath: displayTextAnimator
@@ -3039,6 +3074,41 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4388095859190750, guid: 6face22910c40804194b2c30e2502ec5,
     type: 2}
   m_PrefabInternal: {fileID: 794555289}
+--- !u!1 &808165531
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 808165532}
+  m_Layer: 5
+  m_Name: Player Score
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &808165532
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 808165531}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1849668763}
+  - {fileID: 329737838}
+  m_Father: {fileID: 1519907170}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 1, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -98.599915, y: -28.200012}
+  m_SizeDelta: {x: 180.33, y: 49.7}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &818540538
 Prefab:
   m_ObjectHideFlags: 0
@@ -3086,6 +3156,11 @@ Prefab:
       propertyPath: m_LocalScale.x
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114216333909082618, guid: 3f05f981823c04a42b0bf6cfa69043d5,
+        type: 2}
+      propertyPath: sceneScoreManager
+      value: 
+      objectReference: {fileID: 1039302015}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3f05f981823c04a42b0bf6cfa69043d5, type: 2}
   m_IsPrefabAsset: 0
@@ -3841,6 +3916,11 @@ Prefab:
       propertyPath: maxMoveDistance
       value: 17
       objectReference: {fileID: 0}
+    - target: {fileID: 114128924143297228, guid: 8f6afff8f42396340b90b1532e7f3de5,
+        type: 2}
+      propertyPath: sceneScoreManager
+      value: 
+      objectReference: {fileID: 1039302015}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8f6afff8f42396340b90b1532e7f3de5, type: 2}
   m_IsPrefabAsset: 0
@@ -4026,9 +4106,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1039302011}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f65cc64a0fa5a834b85cb9e739da2a11, type: 3}
+  m_Script: {fileID: 11500000, guid: 34a00a615239f6f4da4778970b570152, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scoreText: {fileID: 1849668761}
 --- !u!1001 &1042559794
 Prefab:
   m_ObjectHideFlags: 0
@@ -4244,6 +4325,11 @@ Prefab:
       propertyPath: m_LocalScale.y
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114920527439910558, guid: 51085fc66d10ef545b607c25473e4fa0,
+        type: 2}
+      propertyPath: sceneScoreManager
+      value: 
+      objectReference: {fileID: 1039302015}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 51085fc66d10ef545b607c25473e4fa0, type: 2}
   m_IsPrefabAsset: 0
@@ -4579,6 +4665,11 @@ Prefab:
       propertyPath: m_LocalScale.y
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114920527439910558, guid: 51085fc66d10ef545b607c25473e4fa0,
+        type: 2}
+      propertyPath: sceneScoreManager
+      value: 
+      objectReference: {fileID: 1039302015}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 51085fc66d10ef545b607c25473e4fa0, type: 2}
   m_IsPrefabAsset: 0
@@ -4803,6 +4894,11 @@ Prefab:
       propertyPath: m_LocalScale.y
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114920527439910558, guid: 51085fc66d10ef545b607c25473e4fa0,
+        type: 2}
+      propertyPath: sceneScoreManager
+      value: 
+      objectReference: {fileID: 1039302015}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 51085fc66d10ef545b607c25473e4fa0, type: 2}
   m_IsPrefabAsset: 0
@@ -4858,6 +4954,11 @@ Prefab:
       propertyPath: m_LocalScale.y
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114920527439910558, guid: 51085fc66d10ef545b607c25473e4fa0,
+        type: 2}
+      propertyPath: sceneScoreManager
+      value: 
+      objectReference: {fileID: 1039302015}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 51085fc66d10ef545b607c25473e4fa0, type: 2}
   m_IsPrefabAsset: 0
@@ -5576,7 +5677,7 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 2050872078}
-  - {fileID: 125879405}
+  - {fileID: 808165532}
   - {fileID: 1534937450}
   - {fileID: 1627683255}
   m_Father: {fileID: 0}
@@ -5669,6 +5770,11 @@ Prefab:
       propertyPath: maxMoveDistance
       value: 60
       objectReference: {fileID: 0}
+    - target: {fileID: 114216333909082618, guid: 3f05f981823c04a42b0bf6cfa69043d5,
+        type: 2}
+      propertyPath: sceneScoreManager
+      value: 
+      objectReference: {fileID: 1039302015}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3f05f981823c04a42b0bf6cfa69043d5, type: 2}
   m_IsPrefabAsset: 0
@@ -5836,6 +5942,11 @@ Prefab:
       propertyPath: m_LocalScale.y
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114920527439910558, guid: 51085fc66d10ef545b607c25473e4fa0,
+        type: 2}
+      propertyPath: sceneScoreManager
+      value: 
+      objectReference: {fileID: 1039302015}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 51085fc66d10ef545b607c25473e4fa0, type: 2}
   m_IsPrefabAsset: 0
@@ -5891,6 +6002,11 @@ Prefab:
       propertyPath: m_LocalScale.y
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114920527439910558, guid: 51085fc66d10ef545b607c25473e4fa0,
+        type: 2}
+      propertyPath: sceneScoreManager
+      value: 
+      objectReference: {fileID: 1039302015}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 51085fc66d10ef545b607c25473e4fa0, type: 2}
   m_IsPrefabAsset: 0
@@ -6152,6 +6268,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 114920527439910558, guid: 51085fc66d10ef545b607c25473e4fa0,
+        type: 2}
+      propertyPath: sceneScoreManager
+      value: 
+      objectReference: {fileID: 1039302015}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 51085fc66d10ef545b607c25473e4fa0, type: 2}
   m_IsPrefabAsset: 0
@@ -6326,6 +6447,11 @@ Prefab:
       propertyPath: m_LocalScale.y
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114920527439910558, guid: 51085fc66d10ef545b607c25473e4fa0,
+        type: 2}
+      propertyPath: sceneScoreManager
+      value: 
+      objectReference: {fileID: 1039302015}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 51085fc66d10ef545b607c25473e4fa0, type: 2}
   m_IsPrefabAsset: 0
@@ -6459,6 +6585,11 @@ Prefab:
       propertyPath: m_LocalScale.y
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114920527439910558, guid: 51085fc66d10ef545b607c25473e4fa0,
+        type: 2}
+      propertyPath: sceneScoreManager
+      value: 
+      objectReference: {fileID: 1039302015}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 51085fc66d10ef545b607c25473e4fa0, type: 2}
   m_IsPrefabAsset: 0
@@ -6511,6 +6642,11 @@ Prefab:
       propertyPath: maxPlayerDistance
       value: 80
       objectReference: {fileID: 0}
+    - target: {fileID: 114216333909082618, guid: 3f05f981823c04a42b0bf6cfa69043d5,
+        type: 2}
+      propertyPath: sceneScoreManager
+      value: 
+      objectReference: {fileID: 1039302015}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3f05f981823c04a42b0bf6cfa69043d5, type: 2}
   m_IsPrefabAsset: 0
@@ -6571,6 +6707,11 @@ Prefab:
       propertyPath: maxMoveDistance
       value: 17
       objectReference: {fileID: 0}
+    - target: {fileID: 114128924143297228, guid: 8f6afff8f42396340b90b1532e7f3de5,
+        type: 2}
+      propertyPath: sceneScoreManager
+      value: 
+      objectReference: {fileID: 1039302015}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8f6afff8f42396340b90b1532e7f3de5, type: 2}
   m_IsPrefabAsset: 0
@@ -6804,6 +6945,11 @@ Prefab:
       propertyPath: maxMoveDistance
       value: 14
       objectReference: {fileID: 0}
+    - target: {fileID: 114216333909082618, guid: 3f05f981823c04a42b0bf6cfa69043d5,
+        type: 2}
+      propertyPath: sceneScoreManager
+      value: 
+      objectReference: {fileID: 1039302015}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3f05f981823c04a42b0bf6cfa69043d5, type: 2}
   m_IsPrefabAsset: 0
@@ -6919,6 +7065,11 @@ Prefab:
       propertyPath: maxMoveDistance
       value: 61
       objectReference: {fileID: 0}
+    - target: {fileID: 114128924143297228, guid: 8f6afff8f42396340b90b1532e7f3de5,
+        type: 2}
+      propertyPath: sceneScoreManager
+      value: 
+      objectReference: {fileID: 1039302015}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8f6afff8f42396340b90b1532e7f3de5, type: 2}
   m_IsPrefabAsset: 0
@@ -6982,6 +7133,81 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4578319753935374, guid: 830e97d98c4602546bf98e7247df56d5,
     type: 2}
   m_PrefabInternal: {fileID: 1830573567}
+--- !u!1 &1849668760
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1849668763}
+  - component: {fileID: 1849668762}
+  - component: {fileID: 1849668761}
+  m_Layer: 5
+  m_Name: Score Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1849668761
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1849668760}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: eec7152cfa11b0649a25fe1a209e56f3, type: 3}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 'Score: 0'
+--- !u!222 &1849668762
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1849668760}
+  m_CullTransparentMesh: 0
+--- !u!224 &1849668763
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1849668760}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 808165532}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0.72200006, y: 1}
+  m_AnchoredPosition: {x: 0.3258667, y: 0}
+  m_SizeDelta: {x: -0.38824, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!4 &1867836165 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4887430845097210, guid: 43937992e50423d45b80898ea695d035,
@@ -7034,6 +7260,11 @@ Prefab:
       propertyPath: m_LocalScale.x
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114128924143297228, guid: 8f6afff8f42396340b90b1532e7f3de5,
+        type: 2}
+      propertyPath: sceneScoreManager
+      value: 
+      objectReference: {fileID: 1039302015}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8f6afff8f42396340b90b1532e7f3de5, type: 2}
   m_IsPrefabAsset: 0
@@ -7310,6 +7541,11 @@ Prefab:
       propertyPath: maxMoveDistance
       value: 17
       objectReference: {fileID: 0}
+    - target: {fileID: 114128924143297228, guid: 8f6afff8f42396340b90b1532e7f3de5,
+        type: 2}
+      propertyPath: sceneScoreManager
+      value: 
+      objectReference: {fileID: 1039302015}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8f6afff8f42396340b90b1532e7f3de5, type: 2}
   m_IsPrefabAsset: 0
@@ -7424,6 +7660,11 @@ Prefab:
       propertyPath: m_LocalScale.x
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114216333909082618, guid: 3f05f981823c04a42b0bf6cfa69043d5,
+        type: 2}
+      propertyPath: sceneScoreManager
+      value: 
+      objectReference: {fileID: 1039302015}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3f05f981823c04a42b0bf6cfa69043d5, type: 2}
   m_IsPrefabAsset: 0
@@ -7494,6 +7735,11 @@ Prefab:
       propertyPath: maxDistanceToTarget
       value: 80
       objectReference: {fileID: 0}
+    - target: {fileID: 114416960291144360, guid: 43937992e50423d45b80898ea695d035,
+        type: 2}
+      propertyPath: sceneScoreManager
+      value: 
+      objectReference: {fileID: 1039302015}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 43937992e50423d45b80898ea695d035, type: 2}
   m_IsPrefabAsset: 0
@@ -7764,6 +8010,11 @@ Prefab:
       propertyPath: m_LocalScale.x
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114216333909082618, guid: 3f05f981823c04a42b0bf6cfa69043d5,
+        type: 2}
+      propertyPath: sceneScoreManager
+      value: 
+      objectReference: {fileID: 1039302015}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3f05f981823c04a42b0bf6cfa69043d5, type: 2}
   m_IsPrefabAsset: 0
@@ -7879,6 +8130,11 @@ Prefab:
       propertyPath: maxMoveDistance
       value: 60
       objectReference: {fileID: 0}
+    - target: {fileID: 114216333909082618, guid: 3f05f981823c04a42b0bf6cfa69043d5,
+        type: 2}
+      propertyPath: sceneScoreManager
+      value: 
+      objectReference: {fileID: 1039302015}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3f05f981823c04a42b0bf6cfa69043d5, type: 2}
   m_IsPrefabAsset: 0
@@ -7936,6 +8192,11 @@ Prefab:
       propertyPath: displayText
       value: 
       objectReference: {fileID: 320970730}
+    - target: {fileID: 114291381098699676, guid: 06c70cf755cac3c42aa82747e3994c3d,
+        type: 2}
+      propertyPath: sceneScoreManager
+      value: 
+      objectReference: {fileID: 1039302015}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 06c70cf755cac3c42aa82747e3994c3d, type: 2}
   m_IsPrefabAsset: 0
@@ -8080,6 +8341,11 @@ Prefab:
       propertyPath: m_LocalScale.x
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114128924143297228, guid: 8f6afff8f42396340b90b1532e7f3de5,
+        type: 2}
+      propertyPath: sceneScoreManager
+      value: 
+      objectReference: {fileID: 1039302015}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8f6afff8f42396340b90b1532e7f3de5, type: 2}
   m_IsPrefabAsset: 0
@@ -8195,6 +8461,11 @@ Prefab:
       propertyPath: maxMoveDistance
       value: 38
       objectReference: {fileID: 0}
+    - target: {fileID: 114216333909082618, guid: 3f05f981823c04a42b0bf6cfa69043d5,
+        type: 2}
+      propertyPath: sceneScoreManager
+      value: 
+      objectReference: {fileID: 1039302015}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3f05f981823c04a42b0bf6cfa69043d5, type: 2}
   m_IsPrefabAsset: 0
