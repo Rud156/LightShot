@@ -10,6 +10,8 @@ public class PlayerChangeGravity : MonoBehaviour
     public int reducedGravity = 5;
     public Text displayText;
     public Animator displayTextAnimator;
+    public AudioSource gravityAudio;
+    public AudioSource gravityActivatedAudio;
 
     private Rigidbody2D playerRB;
     private bool gravitySwitchCollected;
@@ -43,13 +45,17 @@ public class PlayerChangeGravity : MonoBehaviour
     /// <param name="other">The other Collider2D involved in this collision.</param>
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag(TagManager.GravityChanger) && !gravitySwitchCollected)
+        if (other.CompareTag(TagManager.GravityChanger))
         {
             gravitySwitchCollected = true;
 
             displayText.text = "Collected Gravity Switch";
             displayText.color = Color.yellow;
             displayTextAnimator.SetTrigger(AnimatorVariables.DisplayText);
+
+            gravityActivatedAudio.Play();
+
+            Destroy(other.gameObject);
         }
     }
 
@@ -57,6 +63,8 @@ public class PlayerChangeGravity : MonoBehaviour
     {
         if (!gravitySwitchCollected)
             return;
+
+        gravityAudio.Play();
 
         float currentGravity = playerRB.gravityScale;
 

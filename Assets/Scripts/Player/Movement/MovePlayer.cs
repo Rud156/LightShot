@@ -8,9 +8,10 @@ public class MovePlayer : MonoBehaviour
     public float jumpVelocity;
     public float fallThresholdVelocity;
 
-    [Header("Jump Dust")]
+    [Header("Jump Effects")]
     public GameObject groundDust;
     public Transform dustSpawnPoint;
+    public AudioSource jumpAudio;
 
     private Rigidbody2D playerRB;
     private SpriteRenderer playerRenderer;
@@ -73,6 +74,8 @@ public class MovePlayer : MonoBehaviour
         {
             playerRB.AddForce(Vector2.up * jumpVelocity, ForceMode2D.Impulse);
             playerGrounded = false;
+
+            jumpAudio.Play();
         }
     }
 

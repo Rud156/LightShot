@@ -4,19 +4,25 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
+[RequireComponent(typeof(AudioSource))]
 public class ChangeSceneOnTrigger : MonoBehaviour
 {
     public Animator displayTextAnimator;
     public Text displayText;
     public float waitTimeForSceneChange = 1.5f;
 
+    private AudioSource portalAudio;
     private bool playerTriggered;
 
     /// <summary>
     /// Start is called on the frame when a script is enabled just before
     /// any of the Update methods is called the first time.
     /// </summary>
-    void Start() => playerTriggered = false;
+    void Start()
+    {
+        portalAudio = GetComponent<AudioSource>();
+        playerTriggered = false;
+    }
 
     /// <summary>
     /// Sent when another object enters a trigger collider attached to this
@@ -31,6 +37,8 @@ public class ChangeSceneOnTrigger : MonoBehaviour
 
     private IEnumerator ChangeSceneOnPortal()
     {
+        portalAudio.Play();
+
         displayText.text = "You Completed the Level !!!";
         displayText.color = Color.green;
         displayTextAnimator.SetTrigger(AnimatorVariables.DisplayText);
