@@ -54,6 +54,7 @@ GameObject:
   - component: {fileID: 95533928440913590}
   - component: {fileID: 114616771868918810}
   - component: {fileID: 114189452883309390}
+  - component: {fileID: 114920527439910558}
   m_Layer: 0
   m_Name: Ground Shooters
   m_TagString: Untagged
@@ -162,6 +163,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df10c0c589ab38741ba782f8e6d5c619, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  destroyParent: 1
   maxEnemyHealth: 50
   enemyDestroyEffect: {fileID: 1023937842508206, guid: fb0442e313fec5847be6991eefc7483d,
     type: 2}
@@ -183,6 +185,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   projectile: {fileID: 1548462238825172, guid: e7edd24746bee4243a57acfe5997143b, type: 2}
   launchPoint: {fileID: 4411444950612834}
+--- !u!114 &114920527439910558
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1837028513807576}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ef11e3bf627dd34e96641cc210364ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneScoreManager: {fileID: 0}
+  scoreAmount: 30
 --- !u!212 &212288744674398404
 SpriteRenderer:
   m_ObjectHideFlags: 1

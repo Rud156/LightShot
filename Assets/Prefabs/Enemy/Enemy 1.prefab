@@ -25,6 +25,7 @@ GameObject:
   - component: {fileID: 114132750390531116}
   - component: {fileID: 114515001857258972}
   - component: {fileID: 114603276916350850}
+  - component: {fileID: 114216333909082618}
   m_Layer: 0
   m_Name: Enemy 1
   m_TagString: Enemy
@@ -104,6 +105,19 @@ MonoBehaviour:
   maxMoveDistance: 40
   jumpVelocity: 1000
   movementSpeed: 1000
+--- !u!114 &114216333909082618
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1978143997530240}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ef11e3bf627dd34e96641cc210364ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneScoreManager: {fileID: 0}
+  scoreAmount: 20
 --- !u!114 &114515001857258972
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -130,6 +144,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df10c0c589ab38741ba782f8e6d5c619, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  destroyParent: 0
   maxEnemyHealth: 50
   enemyDestroyEffect: {fileID: 1023937842508206, guid: fb0442e313fec5847be6991eefc7483d,
     type: 2}

@@ -25,6 +25,7 @@ GameObject:
   - component: {fileID: 114400670919853886}
   - component: {fileID: 114916766905710028}
   - component: {fileID: 114266347319273738}
+  - component: {fileID: 114128924143297228}
   m_Layer: 0
   m_Name: Enemy 2
   m_TagString: Enemy
@@ -80,6 +81,19 @@ CircleCollider2D:
   m_Offset: {x: 0.14324856, y: 0.20054817}
   serializedVersion: 2
   m_Radius: 2.875
+--- !u!114 &114128924143297228
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1028237871505106}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ef11e3bf627dd34e96641cc210364ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneScoreManager: {fileID: 0}
+  scoreAmount: 20
 --- !u!114 &114266347319273738
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -91,6 +105,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df10c0c589ab38741ba782f8e6d5c619, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  destroyParent: 0
   maxEnemyHealth: 50
   enemyDestroyEffect: {fileID: 1023937842508206, guid: fb0442e313fec5847be6991eefc7483d,
     type: 2}

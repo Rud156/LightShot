@@ -22,6 +22,8 @@ GameObject:
   - component: {fileID: 212204106982732840}
   - component: {fileID: 60442021732084790}
   - component: {fileID: 114160770709226968}
+  - component: {fileID: 114392223481837168}
+  - component: {fileID: 114416960291144360}
   m_Layer: 0
   m_Name: Wall Shooters 1
   m_TagString: Untagged
@@ -119,6 +121,39 @@ MonoBehaviour:
   launchPoint: {fileID: 4265666227538594}
   projectileLaunchSpeed: 2
   waitBetweenShots: 3
+--- !u!114 &114392223481837168
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1349069811100546}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df10c0c589ab38741ba782f8e6d5c619, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destroyParent: 0
+  maxEnemyHealth: 50
+  enemyDestroyEffect: {fileID: 1023937842508206, guid: fb0442e313fec5847be6991eefc7483d,
+    type: 2}
+  enemyDamageAmount: 10
+  lightOrbs: {fileID: 1473085685321584, guid: 67b7b2a4707f1854e95c604101e7dca2, type: 2}
+  minLightOrbs: 1
+  maxLightOrbs: 7
+  orbCircleRadius: 5
+--- !u!114 &114416960291144360
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1349069811100546}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ef11e3bf627dd34e96641cc210364ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneScoreManager: {fileID: 0}
+  scoreAmount: 50
 --- !u!212 &212204106982732840
 SpriteRenderer:
   m_ObjectHideFlags: 1

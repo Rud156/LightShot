@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class EnemyDamageSetter : MonoBehaviour
 {
+    public bool destroyParent = false;
+
     [Header("Enemy Stats")]
     public float maxEnemyHealth = 50;
     public GameObject enemyDestroyEffect;
@@ -48,8 +50,10 @@ public class EnemyDamageSetter : MonoBehaviour
                    randomPointInsideCircle + transform.position,
                    Quaternion.identity);
             }
-
-            Destroy(gameObject);
+            if (destroyParent)
+                Destroy(transform.parent.gameObject);
+            else
+                Destroy(gameObject);
         }
     }
 
