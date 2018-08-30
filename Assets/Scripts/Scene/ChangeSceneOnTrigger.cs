@@ -36,6 +36,10 @@ public class ChangeSceneOnTrigger : MonoBehaviour
         {
             StartCoroutine(ChangeSceneOnPortal());
             playerTriggered = true;
+
+            int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+            PlayerPrefs
+                .SetInt($"{ExtensionFunctions.GetPlayerPrefBaseString()}_${currentSceneIndex - 2}", 1);
         }
     }
 
