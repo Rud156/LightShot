@@ -2,7 +2,8 @@
 A game made for the [Brackeys Game Jam](https://itch.io/jam/brackeys) inspired by Mario with a small twist added for the theme **Light**.
 
 ## Objective:
-> Reach the door at the end of the level avoiding all enemies and weapons. Levels 1 and 2 introduce all game mechanics. The rest are were hell can break loose.
+> Reach the door at the end of the level avoiding all enemies and weapons. Levels 1 and 2 introduce all game mechanics. The rest are were hell can break loose
+#### Try to get the highest score possible in each level.
 
 ## Controls:
 - A/D or Left/Right Arrow Keys to move
