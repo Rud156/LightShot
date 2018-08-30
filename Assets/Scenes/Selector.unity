@@ -225,6 +225,13 @@ Prefab:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 114286525933817604, guid: 9900c21b6984a3e42971b8dbc406814a,
+        type: 2}
+      propertyPath: m_Text
+      value: 'Level 1
+
+        <b>Tutorial</b>'
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9900c21b6984a3e42971b8dbc406814a, type: 2}
   m_IsPrefabAsset: 0
@@ -1872,7 +1879,9 @@ Prefab:
     - target: {fileID: 114286525933817604, guid: 9900c21b6984a3e42971b8dbc406814a,
         type: 2}
       propertyPath: m_Text
-      value: Level 2
+      value: 'Level 2
+
+        <b>Tutorial</b>'
       objectReference: {fileID: 0}
     - target: {fileID: 114288117054959898, guid: 9900c21b6984a3e42971b8dbc406814a,
         type: 2}
