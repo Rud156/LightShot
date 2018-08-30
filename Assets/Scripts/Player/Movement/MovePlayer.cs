@@ -8,6 +8,10 @@ public class MovePlayer : MonoBehaviour
     public float jumpVelocity;
     public float fallThresholdVelocity;
 
+    [Header("Jump Dust")]
+    public GameObject groundDust;
+    public Transform dustSpawnPoint;
+
     private Rigidbody2D playerRB;
     private SpriteRenderer playerRenderer;
 
@@ -42,7 +46,10 @@ public class MovePlayer : MonoBehaviour
             other.gameObject.CompareTag(TagManager.LavaGround) ||
             other.gameObject.CompareTag(TagManager.WaterGround) ||
             other.gameObject.CompareTag(TagManager.MetalGround))
+        {
+            Instantiate(groundDust, dustSpawnPoint.transform.position, groundDust.transform.rotation);
             playerGrounded = true;
+        }
     }
 
     private void HorizontalMovement()
