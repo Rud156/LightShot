@@ -13,6 +13,8 @@ public class SceneSelector : MonoBehaviour
     public void LoadScene_6() => LoadScene(8);
     public void LoadScene_7() => LoadScene(9);
 
+    public void GoToHomeScreen() => SceneManager.LoadScene(0);
+
     private void LoadScene(int sceneIndex)
     {
         NextSceneData.nextSceneIndex = sceneIndex;
