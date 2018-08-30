@@ -5,11 +5,12 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 [RequireComponent(typeof(AudioSource))]
-public class ChangeSceneOnTrigger : MonoBehaviour
+public class ChangeSceneOnPortalTrigger : MonoBehaviour
 {
     public Animator displayTextAnimator;
     public Text displayText;
     public float waitTimeForSceneChange = 1.5f;
+    public SceneScoreManager sceneScoreManager;
 
     private AudioSource portalAudio;
     private bool playerTriggered;
@@ -40,8 +41,11 @@ public class ChangeSceneOnTrigger : MonoBehaviour
             int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
             PlayerPrefs
                 .SetInt($"{ExtensionFunctions.GetPlayerPrefBaseString()}_${currentSceneIndex - 2}", 1);
+
+            sceneScoreManager.SaveScore();
         }
     }
+
 
     private IEnumerator ChangeSceneOnPortal()
     {
