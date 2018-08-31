@@ -13,6 +13,9 @@ public class MovePlayer : MonoBehaviour
     public Transform dustSpawnPoint;
     public AudioSource jumpAudio;
 
+    [HideInInspector]
+    public bool displayInput;
+
     private Rigidbody2D playerRB;
     private SpriteRenderer playerRenderer;
 
@@ -30,6 +33,9 @@ public class MovePlayer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (displayInput)
+            return;
+
         HorizontalMovement();
         VerticalMovement();
 

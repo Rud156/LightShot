@@ -26,7 +26,7 @@ public class CameraFollowPlayer : MonoBehaviour
         player = GameObject.FindGameObjectWithTag(TagManager.Player).transform;
         playerController = player.GetComponent<MovePlayer>();
 
-        playerController.enabled = false;
+        playerController.displayInput = true;
 
         StartCoroutine(DisplayPortalThenFollowPLayer());
     }
@@ -63,6 +63,6 @@ public class CameraFollowPlayer : MonoBehaviour
 
         currentTarget = player;
         currentMovementSpeed = playerFollowSpeed;
-        playerController.enabled = true;
+        playerController.displayInput = false;
     }
 }
