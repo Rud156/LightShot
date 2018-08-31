@@ -2712,7 +2712,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 45218904d380f2349a7f32fff3c5737f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  followSpeed: 5
+  playerFollowSpeed: 5
+  bufferTime: 1
+  portal: {fileID: 2049143712}
+  moveToPortalSpeed: 1
+  waitTimeForPortal: 5
 --- !u!1 &1519907166
 GameObject:
   m_ObjectHideFlags: 0
@@ -3481,6 +3485,11 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 06c70cf755cac3c42aa82747e3994c3d, type: 2}
   m_IsPrefabAsset: 0
+--- !u!4 &2049143712 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4377053397113628, guid: 06c70cf755cac3c42aa82747e3994c3d,
+    type: 2}
+  m_PrefabInternal: {fileID: 2049143711}
 --- !u!1 &2050872077
 GameObject:
   m_ObjectHideFlags: 0

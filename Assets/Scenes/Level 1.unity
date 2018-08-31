@@ -926,7 +926,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 45218904d380f2349a7f32fff3c5737f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  followSpeed: 5
+  playerFollowSpeed: 5
+  bufferTime: 1
+  portal: {fileID: 1041466386}
+  moveToPortalSpeed: 1
+  waitTimeForPortal: 7
 --- !u!4 &275273799
 Transform:
   m_ObjectHideFlags: 0
@@ -1748,6 +1752,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scoreText: {fileID: 46665696}
+--- !u!4 &1041466386 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4377053397113628, guid: 06c70cf755cac3c42aa82747e3994c3d,
+    type: 2}
+  m_PrefabInternal: {fileID: 726464352}
 --- !u!1 &1105778965
 GameObject:
   m_ObjectHideFlags: 0

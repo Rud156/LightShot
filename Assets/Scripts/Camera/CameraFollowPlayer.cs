@@ -4,16 +4,35 @@ using UnityEngine;
 
 public class CameraFollowPlayer : MonoBehaviour
 {
-    public float followSpeed = 5f;
+    [Header("Player")]
+    public float playerFollowSpeed = 5f;
+    public float bufferTime = 3f;
+
+    [Header("Portal")]
+    public Transform portal;
+    public float moveToPortalSpeed = 1f;
+    public float waitTimeForPortal = 5f;
 
     private Transform player;
-    private Vector2 lastPlayerPosition;
+    private MovePlayer playerController;
+    private Vector2 lastPosition;
+
+    private Transform currentTarget;
+    private float currentMovementSpeed;
 
     // Use this for initialization
-    void Start() => player = GameObject.FindGameObjectWithTag(TagManager.Player).transform;
+    void Start()
+    {
+        player = GameObject.FindGameObjectWithTag(TagManager.Player).transform;
+        playerController = player.GetComponent<MovePlayer>();
+
+        playerController.enabled = false;
+
+        StartCoroutine(DisplayPortalThenFollowPLayer());
+    }
 
     // Update is called once per frame
-    void Update() => UpdateLastPlayerPosition();
+    void Update() => UpdateLastPosition();
 
     /// <summary>
     /// This function is called every fixed framerate frame, if the MonoBehaviour is enabled.
@@ -23,13 +42,27 @@ public class CameraFollowPlayer : MonoBehaviour
     private void MoveCameraIntoView() =>
         transform.position =
             Vector3.Lerp(transform.position,
-            new Vector3(lastPlayerPosition.x, lastPlayerPosition.y, -10),
-            followSpeed * Time.deltaTime);
+            new Vector3(lastPosition.x, lastPosition.y, -10),
+            currentMovementSpeed * Time.deltaTime);
 
 
-    private void UpdateLastPlayerPosition()
+    private void UpdateLastPosition()
     {
-        if (player != null)
-            lastPlayerPosition = player.position;
+        if (currentTarget != null)
+            lastPosition = currentTarget.position;
+    }
+
+    IEnumerator DisplayPortalThenFollowPLayer()
+    {
+        yield return new WaitForSeconds(bufferTime);
+
+        currentTarget = portal;
+        currentMovementSpeed = moveToPortalSpeed;
+
+        yield return new WaitForSeconds(waitTimeForPortal);
+
+        currentTarget = player;
+        currentMovementSpeed = playerFollowSpeed;
+        playerController.enabled = true;
     }
 }
